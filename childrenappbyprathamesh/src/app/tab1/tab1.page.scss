@@ -1,0 +1,782 @@
+
+.container{
+	margin-left:auto;
+	margin-right:auto;
+	width:90%;
+	display:grid;
+	grid-template-columns:repeat[6,auto];
+	grid-template-rows:repeat[6,.25fr];
+	grid-gap:10px;
+	justify-content:center;
+	align-content:center;
+}
+h1{
+	font-family:sans-serif;
+	font-size:5.5em;
+	text-align:center;
+margin-top:20%;
+margin-bottom:auto;
+
+}
+img{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+header{
+	grid-area:1/span 6;
+	display:grid;
+	grid-template-areas:
+		'title directions'
+		'title directions2';
+	background-color:#0D47A1;
+	color:white;
+}
+.title{
+	grid-area:title;
+	text-align:left;
+	margin-left:10px;
+	margin-top:3%;
+	margin-bottom:3%;
+}
+h2{
+	text-align:center;
+	margin-top:30%;
+}
+h3{
+	grid-area:directions;
+	text-align:center;
+}
+h4{
+	grid-area:directions2;
+	text-align:center;
+}
+.aImage{
+	grid-area:2/1;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.a{
+	grid-area:2/1;
+	z-index:-1;
+}
+.bImage{
+	grid-area:2/2;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.b{
+	grid-area:2/2;
+	z-index:-1;
+}
+.cImage{
+	grid-area:2/3;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.c{
+	grid-area:2/3;
+	z-index:-1;
+}
+.dImage{
+	grid-area:2/4;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+
+}
+.d{
+	grid-area:2/4;
+	z-index:-1;
+}
+.eImage{
+	grid-area:2/5;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.e{
+	grid-area:2/5;
+	z-index:-1;
+}
+.fImage{
+	grid-area:2/6;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.f{
+	grid-area:2/6;
+	z-index:-1;
+}
+.gImage{
+	grid-area:3/1;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.g{
+	grid-area:3/1;
+	z-index:-1;
+}
+.hImage{
+	grid-area:3/2;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.h{
+	grid-area:3/2;
+	z-index:-1;
+}
+.iImage{
+	grid-area:3/3;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.i{
+	grid-area:3/3;
+	z-index:-1;
+}
+.jImage{
+	grid-area:3/4;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.j{
+	grid-area:3/4;
+	z-index:-1;
+}
+.kImage{
+	grid-area:3/5;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.k{
+	grid-area:3/5;
+	z-index:-1;
+}
+.lImage{
+	grid-area:3/6;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.l{
+	grid-area:3/6;
+	z-index:-1;
+}
+.mImage{
+	grid-area:4/1;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.m{
+	grid-area:4/1;
+	z-index:-1;
+}
+.nImage{
+	grid-area:4/2;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.n{
+	grid-area:4/2;
+	z-index:-1;
+}
+.oImage{
+	grid-area:4/3;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.o{
+	grid-area:4/3;
+	z-index:-1;
+}
+.pImage{
+	grid-area:4/4;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.p{
+	grid-area:4/4;
+	z-index:-1;
+}
+.qImage{
+	grid-area:4/5;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.q{
+	grid-area:4/5;
+	z-index:-1;
+}
+.rImage{
+	grid-area:4/6;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.r{
+	grid-area:4/6;
+	z-index:-1;
+}
+.sImage{
+	grid-area:5/1;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.s{
+	grid-area:5/1;
+	z-index:-1;
+}
+.tImage{
+	grid-area:5/2;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.t{
+	grid-area:5/2;
+	z-index:-1;
+}
+.uImage{
+	grid-area:5/3;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.u{
+	grid-area:5/3;
+	z-index:-1;
+}
+.vImage{
+	grid-area:5/4;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.v{
+	grid-area:5/4;
+	z-index:-1;
+}
+.wImage{
+	grid-area:5/5;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.w{
+	grid-area:5/5;
+	z-index:-1;
+}
+.xImage{
+	grid-area:5/6;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.x{
+	grid-area:5/6;
+	z-index:-1;
+}
+.yImage{
+	grid-area:6/1;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.y{
+	grid-area:6/1;
+	z-index:-1;
+}
+.zImage{
+	grid-area:6/2;
+	opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.z{
+	grid-area:6/2;
+	z-index:-1;
+}
+.starImage{
+	grid-area:6/3;
+		opacity: 1;
+	-webkit-transition-property: opacity; /* Safari */
+  -webkit-transition-duration: 2s; /* Safari */
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+.star{
+	grid-area:6/3;
+	z-index:-1;
+}
+/*Hover Effect*/
+.aImage:hover{
+	opacity:0;
+}
+
+.bImage:hover{
+	opacity:0;
+}
+
+.cImage:hover{
+	opacity:0;
+}
+
+.dImage:hover{
+	opacity:0;
+}
+
+.eImage:hover{
+	opacity:0;
+}
+
+.fImage:hover{
+	opacity:0;
+}
+
+.gImage:hover{
+	opacity:0;
+}
+
+.hImage:hover{
+	opacity:0;
+}
+.iImage:hover{
+	opacity:0;
+}
+.jImage:hover{
+	opacity:0;
+}
+.kImage:hover{
+	opacity:0;
+}
+.lImage:hover{
+	opacity:0;
+}
+.mImage:hover{
+	opacity:0;
+}
+.nImage:hover{
+	opacity:0;
+}
+.oImage:hover{
+	opacity:0;
+}
+.pImage:hover{
+	opacity:0;
+}
+.qImage:hover{
+	opacity:0;
+}
+.rImage:hover{
+	opacity:0;
+}
+.sImage:hover{
+	opacity:0;
+}
+.tImage:hover{
+	opacity:0;
+}
+.uImage:hover{
+	opacity:0;
+}
+.vImage:hover{
+	opacity:0;
+}
+.wImage:hover{
+	opacity:0;
+}
+.xImage:hover{
+	opacity:0;
+}
+.yImage:hover{
+	opacity:0;
+}
+.zImage:hover{
+	opacity:0;
+}
+.starImage:hover{
+	opacity:0;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.container{
+	width:100%;
+	display:grid;
+	grid-template-columns:repeat[2,auto];
+	grid-template-rows:repeat[15,.25fr];
+}
+	.title{
+		font-size:3em;
+		text-align:center;
+	}
+	h3,h4{
+		font-size:.75em;
+	}
+	header{
+		grid-area:1/span 2;
+		display:grid;
+		grid-template-areas:
+			'title title'
+			'directions directions2';
+	}
+	.aImage,.a{
+		grid-area:2/1;
+	}
+		.bImage,.b{
+		grid-area:2/2;
+	}
+		.cImage,.c{
+		grid-area:3/1;
+	}
+		.dImage,.d{
+		grid-area:3/2;
+	}
+		.eImage,.e{
+		grid-area:4/1;
+	}
+		.fImage,.f{
+		grid-area:4/2;
+	}
+		.gImage,.g{
+		grid-area:5/1;
+	}
+		.hImage,.h{
+		grid-area:5/2;
+	}
+		.iImage,.i{
+		grid-area:6/1;
+	}
+		.jImage,.j{
+		grid-area:6/2;
+	}
+		.kImage,.k{
+		grid-area:7/1;
+	}
+		.lImage,.l{
+		grid-area:7/2;
+	}
+		.mImage,.m{
+		grid-area:8/1;
+	}
+		.nImage,.n{
+		grid-area:8/2;
+	}
+		.oImage,.o{
+		grid-area:9/1;
+	}
+		.pImage,.p{
+		grid-area:9/2;
+	}
+		.qImage,.q{
+		grid-area:10/1;
+	}
+		.rImage,.r{
+		grid-area:10/2;
+	}
+		.sImage,.s{
+		grid-area:11/1;
+	}
+		.tImage,.t{
+		grid-area:11/2;
+	}
+		.uImage,.u{
+		grid-area:12/1;
+	}
+		.vImage,.v{
+		grid-area:12/2;
+	}
+		.wImage,.w{
+		grid-area:13/1;
+	}
+		.xImage,.x{
+		grid-area:13/2;
+	}
+		.yImage,.y{
+		grid-area:14/1;
+	}
+		.zImage,.z{
+		grid-area:14/2;
+	}
+		.starImage,.star{
+		grid-area:15/1;
+	}
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+		.container{
+	width:100%;
+	display:grid;
+	grid-template-columns:repeat[2,auto];
+	grid-template-rows:repeat[15,.25fr];
+}
+	.title{
+		font-size:3em;
+		text-align:center;
+	}
+	h3,h4{
+		font-size:.75em;
+	}
+	header{
+		grid-area:1/span 2;
+		display:grid;
+		grid-template-areas:
+			'title title'
+			'directions directions2';
+	}
+	.aImage,.a{
+		grid-area:2/1;
+	}
+		.bImage,.b{
+		grid-area:2/2;
+	}
+		.cImage,.c{
+		grid-area:3/1;
+	}
+		.dImage,.d{
+		grid-area:3/2;
+	}
+		.eImage,.e{
+		grid-area:4/1;
+	}
+		.fImage,.f{
+		grid-area:4/2;
+	}
+		.gImage,.g{
+		grid-area:5/1;
+	}
+		.hImage,.h{
+		grid-area:5/2;
+	}
+		.iImage,.i{
+		grid-area:6/1;
+	}
+		.jImage,.j{
+		grid-area:6/2;
+	}
+		.kImage,.k{
+		grid-area:7/1;
+	}
+		.lImage,.l{
+		grid-area:7/2;
+	}
+		.mImage,.m{
+		grid-area:8/1;
+	}
+		.nImage,.n{
+		grid-area:8/2;
+	}
+		.oImage,.o{
+		grid-area:9/1;
+	}
+		.pImage,.p{
+		grid-area:9/2;
+	}
+		.qImage,.q{
+		grid-area:10/1;
+	}
+		.rImage,.r{
+		grid-area:10/2;
+	}
+		.sImage,.s{
+		grid-area:11/1;
+	}
+		.tImage,.t{
+		grid-area:11/2;
+	}
+		.uImage,.u{
+		grid-area:12/1;
+	}
+		.vImage,.v{
+		grid-area:12/2;
+	}
+		.wImage,.w{
+		grid-area:13/1;
+	}
+		.xImage,.x{
+		grid-area:13/2;
+	}
+		.yImage,.y{
+		grid-area:14/1;
+	}
+		.zImage,.z{
+		grid-area:14/2;
+	}
+		.starImage,.star{
+		grid-area:15/1;
+	}
+} 
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+			.container{
+	width:90%;
+				margin-left:auto;
+				margin-right:auto;
+	display:grid;
+	grid-template-columns:.25fr .25fr .25fr .25fr;
+	grid-template-rows:repeat[15,.25fr];
+				overflow:hidden;
+}
+	.title{
+		font-size:5em;
+		text-align:center;
+	}
+	h3,h4{
+		font-size:1em;
+	}
+	header{
+		grid-area:1/span 4;
+		display:grid;
+		grid-template-areas:
+			'title title'
+			'directions directions2';
+	}
+	.aImage,.a{
+		grid-area:2/1;
+	}
+		.bImage,.b{
+		grid-area:2/2;
+	}
+		.cImage,.c{
+		grid-area:2/3;
+	}
+		.dImage,.d{
+		grid-area:2/4;
+	}
+		.eImage,.e{
+		grid-area:3/1;
+	}
+		.fImage,.f{
+		grid-area:3/2;
+	}
+		.gImage,.g{
+		grid-area:3/3;
+	}
+		.hImage,.h{
+		grid-area:3/4;
+	}
+		.iImage,.i{
+		grid-area:5/1;
+	}
+		.jImage,.j{
+		grid-area:5/2;
+	}
+		.kImage,.k{
+		grid-area:5/3;
+	}
+		.lImage,.l{
+		grid-area:5/4;
+	}
+		.mImage,.m{
+		grid-area:6/1;
+	}
+		.nImage,.n{
+		grid-area:6/2;
+	}
+		.oImage,.o{
+		grid-area:6/3;
+	}
+		.pImage,.p{
+		grid-area:6/4;
+	}
+		.qImage,.q{
+		grid-area:7/1;
+	}
+		.rImage,.r{
+		grid-area:7/2;
+	}
+		.sImage,.s{
+		grid-area:7/3;
+	}
+		.tImage,.t{
+		grid-area:7/4;
+	}
+		.uImage,.u{
+		grid-area:8/1;
+	}
+		.vImage,.v{
+		grid-area:8/2;
+	}
+		.wImage,.w{
+		grid-area:8/3;
+	}
+		.xImage,.x{
+		grid-area:8/4;
+	}
+		.yImage,.y{
+		grid-area:9/1;
+	}
+		.zImage,.z{
+		grid-area:9/2;
+	}
+		.starImage,.star{
+		grid-area:9/3;
+	}
+} 

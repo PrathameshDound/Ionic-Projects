@@ -1,0 +1,17 @@
+main{
+  background-color:black important;
+}
+
+.flex{
+  margin-top: 2rem;
+  display : flex;
+  justify-content: space-around;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5rem;
+  border-radius: 3rem;
+}

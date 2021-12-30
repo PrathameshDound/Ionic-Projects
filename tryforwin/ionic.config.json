@@ -1,0 +1,7 @@
+{
+  "name": "tryforwin",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "spit",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

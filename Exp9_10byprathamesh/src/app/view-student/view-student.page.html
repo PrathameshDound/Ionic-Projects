@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Student Details
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="full">
+    <form [formGroup]="updateStudentForm"  (ngSubmit)="updateForm()">
+      <ion-item>
+        <ion-label position="floating">Name</ion-label>
+        <ion-input formControlName="name" type="text" readonly></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input formControlName="email" type="text" readonly>
+        </ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Mobile</ion-label>
+        <ion-input formControlName="mobile" type="text" readonly>
+        </ion-input>
+      </ion-item>
+         <ion-item>
+        <ion-label position="floating">Class</ion-label>
+        <ion-input formControlName="class" type="text" readonly>
+        </ion-input>
+      </ion-item>
+         <ion-item>
+        <ion-label position="floating">UID</ion-label>
+        <ion-input formControlName="uid" type="text" readonly>
+        </ion-input>
+      </ion-item>
+         <ion-item>
+        <ion-label position="floating">Course</ion-label>
+        <ion-input formControlName="course" type="text" readonly>
+        </ion-input>
+      </ion-item>
+
+      <ion-row>
+
+      </ion-row>
+    </form>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+    <ion-toolbar color="primary">
+      <ion-title>
+        Company Drives
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content [fullscreen]="true">
+    <div id="faq">
+      <ul>
+        <li>
+          <input type="checkbox" checked>
+          <i></i>
+          <h2>TCS</h2>
+          <p><b>Date</b> - 15/11/2021<br>
+            <b>Internship</b><br>
+            <b>Job Role</b> - Intern<br>
+            <b>Stipend</b> - 20,000/-<br>
+             </p>
+        <ion-button color="primary" expand="block" fill="outline"(click)="apply()" ><ion-icon name="person-add-sharp"></ion-icon> &nbsp; Apply Now</ion-button>
+  
+        </li>
+  
+        <li>
+         <input type="checkbox" checked>
+          <i></i>
+          <h2>Capgemini</h2>
+          <p><b>Date</b> - 20/11/2021<br>
+            <b>Internship</b><br>
+            <b>Job Role</b> - Intern<br>
+            <b>Stipend</b> - 15,000/-<br>
+             </p>
+             <ion-button color="secondary" expand="block" fill="outline"(click)="apply()" ><ion-icon name="person-add-sharp"></ion-icon> &nbsp;Apply Now</ion-button>
+       </li>
+      </ul>
+    </div>
+  </ion-content>

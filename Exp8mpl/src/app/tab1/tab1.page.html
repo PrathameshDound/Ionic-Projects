@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Calendar
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-calendar 
+    [(ngModel)]="dateMulti"
+    [options]="optionsMulti"
+    [type]="type"
+    [format]="'YYYY-MM-DD'">
+</ion-calendar>
+</ion-content>

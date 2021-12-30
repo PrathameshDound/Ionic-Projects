@@ -1,0 +1,99 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Admission</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+  <ion-title>First Name</ion-title>
+  <ion-item lines="none">
+  <input placeholder="First Name" type="text" [(ngModel)]="username">
+  </ion-item>
+
+  <ion-title>Middle Name</ion-title>
+  <ion-item lines="none">
+  <input placeholder="Middle Name" type="text" [(ngModel)]="mname">
+  </ion-item>
+
+  <ion-title>Last Name</ion-title>
+  <ion-item lines="none">
+  <input placeholder="Last Name" type="text" [(ngModel)]="lname">
+  </ion-item>
+
+  <ion-title>Mobile No.</ion-title>
+  <ion-item lines="none">
+  <input placeholder="Mobile Number" type="number" [(ngModel)]="mobile">
+  </ion-item>
+
+  <ion-title>Email</ion-title>
+  <ion-item lines="none">
+  <input placeholder="Email" type="mail" [(ngModel)]="mail">
+  </ion-item>
+
+  <ion-item lines="none" class="dropDown">
+  <ion-label>Gender</ion-label>
+  <ion-select>
+  <ion-select-option value="male">Male</ion-select-option>
+  <ion-select-option value="female">Female</ion-select-option>
+  <ion-select-option value="other">Other</ion-select-option>
+  </ion-select>
+  </ion-item>
+
+  <ion-item lines="none" class="dropDown">
+    <ion-label>Admission in</ion-label>
+    <ion-select>
+    <ion-select-option value="male">MCA</ion-select-option>
+    <ion-select-option value="female">COMPS</ion-select-option>
+    <ion-select-option value="other">IT</ion-select-option>
+    <ion-select-option value="other">EXTC</ion-select-option>
+    <ion-select-option value="other">ETRX</ion-select-option>
+    </ion-select>
+    </ion-item>
+
+    <ion-item lines="none" class="dropDown">
+      <ion-label>Last Degree / Class</ion-label>
+      <ion-select>
+      <ion-select-option value="male">12th</ion-select-option>
+      <ion-select-option value="female">B.Sc.</ion-select-option>
+      <ion-select-option value="other">B.Sc. (C.S.)</ion-select-option>
+      <ion-select-option value="other">B.Sc. (I.T.)</ion-select-option>
+      <ion-select-option value="other">BCA</ion-select-option>
+      </ion-select>
+      </ion-item>
+
+      <ion-title>Percentage</ion-title>
+  <ion-item lines="none">
+  <input placeholder="Percentage/ CGPA" type="number" [(ngModel)]="per">
+  </ion-item>
+
+  <ion-title>Seat No./ PRN</ion-title>
+  <ion-item lines="none">
+  <input placeholder="Seat No./ PRN No." type="number" [(ngModel)]="prn">
+  </ion-item>
+
+  <ion-title>CET Score</ion-title>
+  <ion-item lines="none">
+  <input placeholder="CET Score" type="number" [(ngModel)]="score">
+  </ion-item>
+
+  <ion-title>CET Application No.</ion-title>
+  <ion-item lines="none">
+  <input placeholder="CET Application No." type="varchar" [(ngModel)]="application">
+  </ion-item>
+
+  <h3>Upload your photo</h3>
+  <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="photo" />
+  </form>
+
+<br><br>
+
+ <section>
+ <ion-button class="section" shape="round" (click)="showToast()">Submit</ion-button>
+ </section>
+ </ion-card>
+ </ion-content>

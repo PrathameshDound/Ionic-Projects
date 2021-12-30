@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Data
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list class="ios list-ios hydrated">
+    <ion-list-header class="ios hydrated">
+      Data Submitted For Students
+    </ion-list-header>
+
+    <ion-item *ngFor="let student of Studentss"   class="user-list">
+      <ion-label>
+        <h5>
+          <ion-icon name="person"></ion-icon> {{student.name}}
+        </h5>
+        <p>
+          <ion-icon name="call"></ion-icon> {{student.mobile}}
+        </p>
+      </ion-label>
+
+      <div class="item-note" item-end>
+        <button ion-button clear [routerLink]="['/view-student/', student.$key]">
+          <ion-icon name="eye" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear [routerLink]="['/edit-student/', student.$key]">
+          <ion-icon name="create" style="zoom:2.0"></ion-icon>
+        </button>
+        <button ion-button clear (click)="deleteStudent(student.$key)">
+          <ion-icon name="trash" style="zoom:2.0"></ion-icon>
+        </button>
+      </div>
+    </ion-item>
+  </ion-list>

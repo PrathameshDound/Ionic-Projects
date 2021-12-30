@@ -1,0 +1,33 @@
+<ion-header [translucent]="true"> 
+<ion-toolbar color="blue"> 
+<ion-title> 
+Registration 
+</ion-title> 
+</ion-toolbar> 
+</ion-header> 
+<ion-content [fullscreen] ="true"> <br><br> 
+<ion-list *ngFor="let user of users; let i = index" lines="none"> 
+<ion-item> 
+<ion-avatar slot="start"> 
+<br> 
+<img [src]="user.avatar || defaultImage"> 
+</ion-avatar> 
+<ion-label><br><br><br><br> 
+<h2>{{user. first_name}} {{user.last_name}}</h2> 
+<p>{{user. email}}</p> 
+<br> 
+<br> 
+</ion-label> 
+<ion-item> 
+<br><br><br><br> 
+<ion-icon name="trash-bin-outline" (click)="deleteUser(i)"></ion-icon> 
+<ion-icon name="pencil-outline" (click)="editUser(i)"></ion-icon> 
+</ion-item> 
+</ion-item> 
+</ion-list> 
+<ion-fab vertical="bottom" horizontal="end" slot="fixed"> 
+<ion-fab-button (click) ="addUser()"> 
+<ion-icon name="person-add-outline"></ion-icon> 
+</ion-fab-button> 
+</ion-fab> 
+</ion-content>

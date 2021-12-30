@@ -1,0 +1,7 @@
+{
+  "name": "MCA APP",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

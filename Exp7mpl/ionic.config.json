@@ -1,0 +1,7 @@
+{
+  "name": "Exp7mpl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
